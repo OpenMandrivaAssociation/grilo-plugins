@@ -10,7 +10,7 @@ Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
 Source0:	http://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-Patch0:		grilo-plugins-0.1.18-tracker0.14-fix.patch
+#Patch0:		grilo-plugins-0.1.18-tracker0.14-fix.patch
 
 BuildRequires:	gnome-common
 BuildRequires:	intltool
@@ -26,7 +26,7 @@ BuildRequires:	pkgconfig(libsoup-2.4)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(rest-0.7)
 BuildRequires:	pkgconfig(sqlite3)
-BuildRequires:	pkgconfig(tracker-sparql-0.12)
+BuildRequires:	pkgconfig(tracker-sparql-0.14)
 BuildRequires:	pkgconfig(grilo-0.1)
 
 Requires:	grilo >= %{version}
