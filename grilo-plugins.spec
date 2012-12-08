@@ -1,16 +1,15 @@
-%define api	0.1
+%define api	0.2
 
 %define url_ver %(echo %{version} | cut -d. -f1,2)
 
 Name:		grilo-plugins
-Version:	0.1.20
+Version:	0.2.3
 Release:	1
 Summary:	Plugins for the Grilo framework
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
-Source0:	http://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
-#Patch0:		grilo-plugins-0.1.18-tracker0.14-fix.patch
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	gnome-common
 BuildRequires:	intltool
@@ -27,7 +26,7 @@ BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(rest-0.7)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(tracker-sparql-0.14)
-BuildRequires:	pkgconfig(grilo-0.1)
+BuildRequires:	pkgconfig(grilo-0.2)
 
 Requires:	grilo >= %{version}
 
@@ -138,4 +137,17 @@ find %{buildroot} -name "*.la" -delete
 
 %{_libdir}/grilo-%{api}/grl-youtube.xml
 %{_libdir}/grilo-%{api}/libgrlyoutube.so
+
+
+
+%changelog
+* Tue Nov 13 2012 Arkady L. Shane <ashejn@rosalab.ru> 0.2.3-1
+- update to 0.2.3
+
+* Thu Oct  3 2012 Arkady L. Shane <ashejn@rosalab.ru> 0.2.0-1
+- update to 0.2.0
+
+* Mon Mar 12 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.1.18-1
++ Revision: 784462
+- imported package grilo-plugins
 
