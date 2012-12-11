@@ -2,10 +2,10 @@
 
 %define api	0.2
 
+Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
 Version:	0.2.4
 Release:	1
-Summary:	Plugins for the Grilo framework
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
@@ -58,7 +58,6 @@ This package contains plugins to get information from theses sources:
 #NOCONFIGURE=1 gnome-autogen.sh
 %configure2_5x \
 	--disable-static \
-	--disable-fakemetadata \
 	--disable-shoutcast \
 	--enable-apple-trailers \
 	--enable-bookmarks \
@@ -84,6 +83,8 @@ This package contains plugins to get information from theses sources:
 
 # Remove files that will not be packaged
 find %{buildroot} -name "*.la" -delete
+# md - not sure what do with these help files 
+rm -fr %{buildroot}/%{_datadir}/gnome
 
 %files
 %doc AUTHORS NEWS README
