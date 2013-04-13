@@ -1,11 +1,12 @@
 %define url_ver %(echo %{version} | cut -d. -f1,2)
+%define _disable_ld_no_undefined 1
 
 %define api	0.2
 
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
 Version:	0.2.4
-Release:	1
+Release:	2
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
