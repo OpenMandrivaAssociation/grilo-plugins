@@ -14,13 +14,12 @@ Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{vers
 
 BuildRequires:	gnome-common
 BuildRequires:	intltool
-BuildRequires:	libgcrypt-devel
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gmime-2.6)
 BuildRequires:	pkgconfig(gupnp-1.0)
 BuildRequires:	pkgconfig(gupnp-av-1.0)
-#BuildRequires:	pkgconfig(libgdata)
-BuildRequires:	libgdata-devel
+BuildRequires:	pkgconfig(libgdata)
+BuildRequires:	pkgconfig(libgcrypt)
 BuildRequires:	pkgconfig(libquvi)
 BuildRequires:	pkgconfig(libsoup-2.4)
 BuildRequires:	pkgconfig(libxml-2.0)
@@ -28,7 +27,6 @@ BuildRequires:	pkgconfig(rest-0.7)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(tracker-sparql-0.14)
 BuildRequires:	pkgconfig(grilo-0.2)
-
 Requires:	grilo >= %{version}
 
 %description
