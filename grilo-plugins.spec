@@ -80,12 +80,14 @@ This package contains plugins to get information from theses sources:
 %install
 %makeinstall_std
 
+%find_lang %{name}
+
 # Remove files that will not be packaged
 find %{buildroot} -name "*.la" -delete
 # md - not sure what do with these help files 
 rm -fr %{buildroot}/%{_datadir}/gnome
 
-%files
+%files -f %{name}.lang
 %doc AUTHORS NEWS README
 %{_libdir}/grilo-%{api}/grl-apple-trailers.xml
 %{_libdir}/grilo-%{api}/libgrlappletrailers.so
@@ -117,11 +119,17 @@ rm -fr %{buildroot}/%{_datadir}/gnome
 %{_libdir}/grilo-%{api}/grl-local-metadata.xml
 %{_libdir}/grilo-%{api}/libgrllocalmetadata.so
 
+%{_libdir}/grilo-%{api}/grl-magnatune.xml
+%{_libdir}/grilo-%{api}/libgrlmagnatune.so
+
 %{_libdir}/grilo-%{api}/grl-metadata-store.xml
 %{_libdir}/grilo-%{api}/libgrlmetadatastore.so
 
 %{_libdir}/grilo-%{api}/grl-podcasts.xml
 %{_libdir}/grilo-%{api}/libgrlpodcasts.so
+
+%{_libdir}/grilo-%{api}/grl-raitv.xml
+%{_libdir}/grilo-%{api}/libgrlraitv.so
 
 %{_libdir}/grilo-%{api}/grl-shoutcast.xml
 %{_libdir}/grilo-%{api}/libgrlshoutcast.so
