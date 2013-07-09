@@ -27,7 +27,7 @@ BuildRequires:	pkgconfig(rest-0.7)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(tracker-sparql-0.16)
 BuildRequires:	pkgconfig(grilo-0.2)
-Requires:	grilo >= %{version}
+Requires:	grilo >= 0.2.6
 
 %description
 Grilo is a framework that provides access to different sources of
