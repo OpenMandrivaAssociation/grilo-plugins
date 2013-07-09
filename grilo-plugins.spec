@@ -5,8 +5,8 @@
 
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
-Version:	0.2.4
-Release:	2
+Version:	0.2.8
+Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
@@ -25,7 +25,7 @@ BuildRequires:	pkgconfig(libsoup-2.4)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(rest-0.7)
 BuildRequires:	pkgconfig(sqlite3)
-BuildRequires:	pkgconfig(tracker-sparql-0.14)
+BuildRequires:	pkgconfig(tracker-sparql-0.16)
 BuildRequires:	pkgconfig(grilo-0.2)
 Requires:	grilo >= %{version}
 
