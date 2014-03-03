@@ -20,13 +20,13 @@ BuildRequires:	pkgconfig(gupnp-1.0)
 BuildRequires:	pkgconfig(gupnp-av-1.0)
 BuildRequires:	pkgconfig(libgdata)
 BuildRequires:	pkgconfig(libgcrypt)
-BuildRequires:	pkgconfig(libquvi)
 BuildRequires:	pkgconfig(libsoup-2.4)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(rest-0.7)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(tracker-sparql-0.16)
 BuildRequires:	pkgconfig(grilo-0.2)
+BuildRequires:	pkgconfig(totem-plparser)
 Requires:	grilo >= 0.2.6
 
 %description
