@@ -15,6 +15,7 @@ Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{vers
 BuildRequires:	gnome-common
 BuildRequires:	intltool
 BuildRequires:	itstool
+BuildRequires:	libxml2-utils
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gmime-2.6)
 BuildRequires:	pkgconfig(gom-1.0)
