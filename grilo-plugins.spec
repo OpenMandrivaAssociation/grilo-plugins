@@ -16,6 +16,9 @@ BuildRequires:	gnome-common
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
+BuildRequires:	pkgconfig(avahi-gobject)
+BuildRequires:	pkgconfig(avahi-glib)
+BuildRequires:	pkgconfig(avahi-client)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gmime-2.6)
 BuildRequires:	pkgconfig(gom-1.0)
