@@ -5,7 +5,7 @@
 
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
-Version:	0.2.11
+Version:	0.2.13
 Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
@@ -16,15 +16,17 @@ BuildRequires:	gnome-common
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gmime-2.6)
+BuildRequires:	pkgconfig(gom-1.0)
 BuildRequires:	pkgconfig(gupnp-1.0)
 BuildRequires:	pkgconfig(gupnp-av-1.0)
 BuildRequires:	pkgconfig(libgdata)
 BuildRequires:	pkgconfig(libgcrypt)
 BuildRequires:	pkgconfig(libsoup-2.4)
 BuildRequires:	pkgconfig(libxml-2.0)
+BuildRequires:	pkgconfig(libmediaart-1.0)
 BuildRequires:	pkgconfig(rest-0.7)
 BuildRequires:	pkgconfig(sqlite3)
-BuildRequires:	pkgconfig(tracker-sparql-0.16)
+BuildRequires:	pkgconfig(tracker-sparql-1.0)
 BuildRequires:	pkgconfig(grilo-0.2)
 BuildRequires:	pkgconfig(totem-plparser)
 Requires:	grilo >= 0.2.6
@@ -54,13 +56,11 @@ This package contains plugins to get information from theses sources:
 %apply_patches
 
 %build
-#NOCONFIGURE=1 gnome-autogen.sh
-%configure2_5x \
+%configure \
 	--disable-static \
 	--disable-shoutcast \
 	--enable-apple-trailers \
 	--enable-bookmarks \
-	--enable-fakemetadata \
 	--enable-filesystem \
 	--enable-flickr	\
 	--enable-gravatar \
@@ -71,9 +71,9 @@ This package contains plugins to get information from theses sources:
 	--enable-podcasts \
 	--enable-shoutcast \
 	--enable-tracker \
-	--enable-upnp \
 	--enable-vimeo \
-	--enable-youtube
+	--enable-youtube \
+	--enable-compile-warnings=no
 
 %make
 
@@ -86,6 +86,7 @@ This package contains plugins to get information from theses sources:
 find %{buildroot} -name "*.la" -delete
 # md - not sure what do with these help files 
 rm -fr %{buildroot}/%{_datadir}/gnome
+rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 
 %files -f %{name}.lang
 %doc AUTHORS NEWS README
@@ -98,8 +99,8 @@ rm -fr %{buildroot}/%{_datadir}/gnome
 %{_libdir}/grilo-%{api}/grl-bookmarks.xml
 %{_libdir}/grilo-%{api}/libgrlbookmarks.so
 
-%{_libdir}/grilo-%{api}/grl-fake-metadata.xml
-%{_libdir}/grilo-%{api}/libgrlfakemetadata.so
+%{_libdir}/grilo-%{api}/grl-dleyna.xml
+%{_libdir}/grilo-%{api}/libgrldleyna.so
 
 %{_libdir}/grilo-%{api}/grl-filesystem.xml
 %{_libdir}/grilo-%{api}/libgrlfilesystem.so
@@ -137,12 +138,33 @@ rm -fr %{buildroot}/%{_datadir}/gnome
 %{_libdir}/grilo-%{api}/grl-tracker.xml
 %{_libdir}/grilo-%{api}/libgrltracker.so
 
-%{_libdir}/grilo-%{api}/grl-upnp.xml
-%{_libdir}/grilo-%{api}/libgrlupnp.so
-
 %{_libdir}/grilo-%{api}/grl-vimeo.xml
 %{_libdir}/grilo-%{api}/libgrlvimeo.so
 
 %{_libdir}/grilo-%{api}/grl-youtube.xml
 %{_libdir}/grilo-%{api}/libgrlyoutube.so
 
+%{_libdir}/grilo-%{api}/grl-optical-media.xml
+%{_libdir}/grilo-%{api}/libgrloptical-media.so
+
+%{_libdir}/grilo-%{api}/grl-tmdb.xml
+%{_libdir}/grilo-%{api}/libgrltmdb.so
+
+%{_libdir}/grilo-%{api}/grl-freebox.xml
+%{_libdir}/grilo-%{api}/libgrlfreebox.so
+
+%{_libdir}/grilo-%{api}/grl-pocket.xml
+%{_libdir}/grilo-%{api}/libgrlpocket.so
+
+%{_libdir}/grilo-%{api}/grl-thetvdb.xml
+%{_libdir}/grilo-%{api}/libgrlthetvdb.so
+
+%{_libdir}/grilo-%{api}/grl-lua-factory.xml
+%{_libdir}/grilo-%{api}/libgrlluafactory.so
+%{_datadir}/%{name}/grl-lua-factory/grl-euronews.lua
+%{_datadir}/%{name}/grl-lua-factory/grl-guardianvideos.lua
+%{_datadir}/%{name}/grl-lua-factory/grl-metrolyrics.lua
+%{_datadir}/%{name}/grl-lua-factory/grl-musicbrainz.lua
+%{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.lua
+
+%{_datadir}/help/C/%{name}
