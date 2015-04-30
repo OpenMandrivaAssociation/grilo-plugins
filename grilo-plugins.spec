@@ -5,7 +5,7 @@
 
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
-Version:	0.2.13
+Version:	 0.2.14
 Release:	2
 Group:		System/Libraries
 License:	LGPLv2+
@@ -90,7 +90,7 @@ This package contains plugins to get information from theses sources:
 
 # Remove files that will not be packaged
 find %{buildroot} -name "*.la" -delete
-# md - not sure what do with these help files 
+# md - not sure what do with these help files
 rm -fr %{buildroot}/%{_datadir}/gnome
 rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 
