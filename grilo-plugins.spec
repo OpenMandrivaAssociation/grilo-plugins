@@ -5,12 +5,12 @@
 
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
-Version:	 0.2.14
+Version:	0.2.14
 Release:	2
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	gnome-common
 BuildRequires:	intltool
@@ -28,7 +28,7 @@ BuildRequires:	pkgconfig(libgdata)
 BuildRequires:	pkgconfig(libgcrypt)
 BuildRequires:	pkgconfig(libsoup-2.4)
 BuildRequires:	pkgconfig(libxml-2.0)
-BuildRequires:	pkgconfig(libmediaart-1.0)
+BuildRequires:	pkgconfig(libmediaart-2.0)
 BuildRequires:	pkgconfig(lua)
 BuildRequires:	pkgconfig(rest-0.7)
 BuildRequires:	pkgconfig(sqlite3)
