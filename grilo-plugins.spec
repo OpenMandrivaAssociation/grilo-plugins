@@ -132,6 +132,9 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 %{_libdir}/grilo-%{api}/grl-metadata-store.xml
 %{_libdir}/grilo-%{api}/libgrlmetadatastore.so
 
+%{_libdir}/grilo-%{api}/grl-opensubtitles.xml
+%{_libdir}/grilo-%{api}/libgrlopensubtitles.so
+
 %{_libdir}/grilo-%{api}/grl-podcasts.xml
 %{_libdir}/grilo-%{api}/libgrlpodcasts.so
 
@@ -172,5 +175,9 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 %{_datadir}/%{name}/grl-lua-factory/grl-metrolyrics.lua
 %{_datadir}/%{name}/grl-lua-factory/grl-musicbrainz.lua
 %{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.lua
+%{_datadir}/%{name}/grl-lua-factory/grl-euronews.gresource.xml
+%{_datadir}/%{name}/grl-lua-factory/grl-guardianvideos.gresource.xml
+%{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.gresource.xml
+
 
 %{_datadir}/help/C/%{name}
