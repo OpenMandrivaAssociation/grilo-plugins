@@ -1,12 +1,13 @@
 %define url_ver %(echo %{version} | cut -d. -f1,2)
 %define _disable_ld_no_undefined 1
+%define _disable_rebuild_configure 1
 
 %define api	0.2
 
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
 Version:	0.2.16
-Release:	4
+Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
@@ -65,7 +66,6 @@ This package contains plugins to get information from theses sources:
 %configure \
 	--disable-static \
 	--disable-shoutcast \
-	--enable-apple-trailers \
 	--enable-bookmarks \
 	--enable-filesystem \
 	--enable-flickr	\
@@ -96,12 +96,6 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 
 %files -f %{name}.lang
 %doc AUTHORS NEWS README
-%{_libdir}/grilo-%{api}/grl-apple-trailers.xml
-%{_libdir}/grilo-%{api}/libgrlappletrailers.so
-
-%{_libdir}/grilo-%{api}/grl-bliptv.xml
-%{_libdir}/grilo-%{api}/libgrlbliptv.so
-
 %{_libdir}/grilo-%{api}/grl-bookmarks.xml
 %{_libdir}/grilo-%{api}/libgrlbookmarks.so
 
@@ -162,22 +156,28 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 %{_libdir}/grilo-%{api}/grl-freebox.xml
 %{_libdir}/grilo-%{api}/libgrlfreebox.so
 
-%{_libdir}/grilo-%{api}/grl-pocket.xml
-%{_libdir}/grilo-%{api}/libgrlpocket.so
-
 %{_libdir}/grilo-%{api}/grl-thetvdb.xml
 %{_libdir}/grilo-%{api}/libgrlthetvdb.so
 
+%{_libdir}/grilo-0.2/grl-daap.xml
+%{_libdir}/grilo-0.2/grl-dpap.xml
+%{_libdir}/grilo-0.2/libgrldaap.so
+%{_libdir}/grilo-0.2/libgrldpap.so
+
 %{_libdir}/grilo-%{api}/grl-lua-factory.xml
 %{_libdir}/grilo-%{api}/libgrlluafactory.so
+
 %{_datadir}/%{name}/grl-lua-factory/grl-euronews.lua
 %{_datadir}/%{name}/grl-lua-factory/grl-guardianvideos.lua
 %{_datadir}/%{name}/grl-lua-factory/grl-metrolyrics.lua
 %{_datadir}/%{name}/grl-lua-factory/grl-musicbrainz.lua
 %{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.lua
-%{_datadir}/%{name}/grl-lua-factory/grl-euronews.gresource.xml
-%{_datadir}/%{name}/grl-lua-factory/grl-guardianvideos.gresource.xml
-%{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.gresource.xml
-
-
+%{_datadir}/%{name}/grl-lua-factory/grl-appletrailers.gresource
+%{_datadir}/%{name}/grl-lua-factory/grl-appletrailers.lua
+%{_datadir}/%{name}/grl-lua-factory/grl-euronews.gresource
+%{_datadir}/%{name}/grl-lua-factory/grl-guardianvideos.gresource
+%{_datadir}/%{name}/grl-lua-factory/grl-pocket.gresource
+%{_datadir}/%{name}/grl-lua-factory/grl-pocket.lua
+%{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.gresource
+%{_datadir}/%{name}/grl-lua-factory/grl-video-title-parsing.lua
 %{_datadir}/help/C/%{name}
