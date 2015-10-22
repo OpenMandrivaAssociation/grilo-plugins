@@ -5,7 +5,7 @@
 
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
-Version:	0.2.14
+Version:	0.2.16
 Release:	4
 Group:		System/Libraries
 License:	LGPLv2+
