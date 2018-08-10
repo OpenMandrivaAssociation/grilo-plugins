@@ -2,12 +2,12 @@
 %define _disable_ld_no_undefined 1
 %define _disable_rebuild_configure 1
 
-%define api	0.2
+%define api	0.3
 
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
-Version:	0.2.16
-Release:	3
+Version:	0.3.7
+Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
