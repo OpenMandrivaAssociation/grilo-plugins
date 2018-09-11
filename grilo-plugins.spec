@@ -34,7 +34,7 @@ BuildRequires:	pkgconfig(libmediaart-2.0)
 BuildRequires:	pkgconfig(lua)
 BuildRequires:	pkgconfig(rest-0.7)
 BuildRequires:	pkgconfig(sqlite3)
-BuildRequires:	pkgconfig(tracker-sparql-1.0)
+BuildRequires:	pkgconfig(tracker-sparql-2.0)
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(totem-plparser)
 Requires:	grilo >= 0.2.6
