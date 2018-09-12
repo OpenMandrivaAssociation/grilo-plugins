@@ -68,7 +68,7 @@ This package contains plugins to get information from theses sources:
 %configure \
 	--disable-static \
 	--disable-shoutcast \
-	--enable-bookmarks \
+	--disable-bookmarks \
 	--enable-filesystem \
 	--enable-flickr	\
 	--enable-gravatar \
