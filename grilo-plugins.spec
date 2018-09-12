@@ -37,6 +37,7 @@ BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(tracker-sparql-2.0)
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(totem-plparser)
+BuildRequires:	pkgconfig(gom-1.0)
 Requires:	grilo >= 0.2.6
 
 %description
