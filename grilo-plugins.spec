@@ -99,4 +99,4 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 %files -f %{name}.lang
 %doc AUTHORS NEWS README
 %{_libdir}/grilo-%{api}/libgrl*.so
-%{_datadir}/grilo-plugins/
+#{_datadir}/grilo-plugins/
