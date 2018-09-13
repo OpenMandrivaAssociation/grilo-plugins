@@ -166,6 +166,9 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 #{_libdir}/grilo-0.2/libgrldaap.so
 #{_libdir}/grilo-0.2/libgrldpap.so
 
+#{_libdir}/%{name}-%{api}/libgrldaap.so
+
+
 #{_libdir}/grilo-%{api}/grl-lua-factory.xml
 #{_libdir}/grilo-%{api}/libgrlluafactory.so
 
@@ -183,3 +186,6 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 #{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.gresource
 #{_datadir}/%{name}/grl-lua-factory/grl-video-title-parsing.lua
 %{_datadir}/help/C/%{name}
+
+%exclude /usr/lib/debug/usr/lib64/grilo-0.3/libgrldaap.so*
+%exclude /usr/lib/debug/usr/lib64/grilo-0.3/libgrlopticalmedia.so*
