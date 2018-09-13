@@ -166,8 +166,7 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 #{_libdir}/grilo-0.2/libgrldaap.so
 #{_libdir}/grilo-0.2/libgrldpap.so
 
-#{_libdir}/%{name}-%{api}/libgrldaap.so
-
+%{_libdir}/%{name}-%{api}/libgrldaap.so
 
 #{_libdir}/grilo-%{api}/grl-lua-factory.xml
 #{_libdir}/grilo-%{api}/libgrlluafactory.so
@@ -189,3 +188,4 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 
 %exclude /usr/lib/debug/usr/lib64/grilo-0.3/libgrldaap.so*
 %exclude /usr/lib/debug/usr/lib64/grilo-0.3/libgrlopticalmedia.so*
+%exclude /usr/lib/debug/usr/lib64/grilo-0.3/libgrldpap.so-0.3.7-1.x86_64.debug
