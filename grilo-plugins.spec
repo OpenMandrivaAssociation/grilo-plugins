@@ -166,7 +166,7 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 #{_libdir}/grilo-0.2/libgrldaap.so
 #{_libdir}/grilo-0.2/libgrldpap.so
 
-%{_libdir}/%{name}-%{api}/libgrldaap.so
+#{_libdir}/grilo-%{api}/libgrldaap.so
 
 #{_libdir}/grilo-%{api}/grl-lua-factory.xml
 #{_libdir}/grilo-%{api}/libgrlluafactory.so
