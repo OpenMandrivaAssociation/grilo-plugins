@@ -98,88 +98,88 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 
 %files -f %{name}.lang
 %doc AUTHORS NEWS README
-%{_libdir}/grilo-%{api}/grl-bookmarks.xml
-%{_libdir}/grilo-%{api}/libgrlbookmarks.so
+#{_libdir}/grilo-%{api}/grl-bookmarks.xml
+#{_libdir}/grilo-%{api}/libgrlbookmarks.so
 
-%{_libdir}/grilo-%{api}/grl-dleyna.xml
+#{_libdir}/grilo-%{api}/grl-dleyna.xml
 %{_libdir}/grilo-%{api}/libgrldleyna.so
 
-%{_libdir}/grilo-%{api}/grl-filesystem.xml
+#{_libdir}/grilo-%{api}/grl-filesystem.xml
 %{_libdir}/grilo-%{api}/libgrlfilesystem.so
 
-%{_libdir}/grilo-%{api}/grl-flickr.xml
+#{_libdir}/grilo-%{api}/grl-flickr.xml
 %{_libdir}/grilo-%{api}/libgrlflickr.so
 
-%{_libdir}/grilo-%{api}/grl-gravatar.xml
+#{_libdir}/grilo-%{api}/grl-gravatar.xml
 %{_libdir}/grilo-%{api}/libgrlgravatar.so
 
-%{_libdir}/grilo-%{api}/grl-jamendo.xml
+#{_libdir}/grilo-%{api}/grl-jamendo.xml
 %{_libdir}/grilo-%{api}/libgrljamendo.so
 
-%{_libdir}/grilo-%{api}/grl-lastfm-albumart.xml
-%{_libdir}/grilo-%{api}/libgrllastfm-albumart.so
+#{_libdir}/grilo-%{api}/grl-lastfm-albumart.xml
+#{_libdir}/grilo-%{api}/libgrllastfm-albumart.so
 
-%{_libdir}/grilo-%{api}/grl-local-metadata.xml
+#{_libdir}/grilo-%{api}/grl-local-metadata.xml
 %{_libdir}/grilo-%{api}/libgrllocalmetadata.so
 
-%{_libdir}/grilo-%{api}/grl-magnatune.xml
+#{_libdir}/grilo-%{api}/grl-magnatune.xml
 %{_libdir}/grilo-%{api}/libgrlmagnatune.so
 
-%{_libdir}/grilo-%{api}/grl-metadata-store.xml
+#{_libdir}/grilo-%{api}/grl-metadata-store.xml
 %{_libdir}/grilo-%{api}/libgrlmetadatastore.so
 
-%{_libdir}/grilo-%{api}/grl-opensubtitles.xml
+#{_libdir}/grilo-%{api}/grl-opensubtitles.xml
 %{_libdir}/grilo-%{api}/libgrlopensubtitles.so
 
-%{_libdir}/grilo-%{api}/grl-podcasts.xml
+#{_libdir}/grilo-%{api}/grl-podcasts.xml
 %{_libdir}/grilo-%{api}/libgrlpodcasts.so
 
-%{_libdir}/grilo-%{api}/grl-raitv.xml
+#{_libdir}/grilo-%{api}/grl-raitv.xml
 %{_libdir}/grilo-%{api}/libgrlraitv.so
 
-%{_libdir}/grilo-%{api}/grl-shoutcast.xml
+#{_libdir}/grilo-%{api}/grl-shoutcast.xml
 %{_libdir}/grilo-%{api}/libgrlshoutcast.so
 
-%{_libdir}/grilo-%{api}/grl-tracker.xml
+#{_libdir}/grilo-%{api}/grl-tracker.xml
 %{_libdir}/grilo-%{api}/libgrltracker.so
 
-%{_libdir}/grilo-%{api}/grl-vimeo.xml
+#{_libdir}/grilo-%{api}/grl-vimeo.xml
 %{_libdir}/grilo-%{api}/libgrlvimeo.so
 
-%{_libdir}/grilo-%{api}/grl-youtube.xml
+#{_libdir}/grilo-%{api}/grl-youtube.xml
 %{_libdir}/grilo-%{api}/libgrlyoutube.so
 
-%{_libdir}/grilo-%{api}/grl-optical-media.xml
-%{_libdir}/grilo-%{api}/libgrloptical-media.so
+#{_libdir}/grilo-%{api}/grl-optical-media.xml
+#{_libdir}/grilo-%{api}/libgrloptical-media.so
 
-%{_libdir}/grilo-%{api}/grl-tmdb.xml
+#{_libdir}/grilo-%{api}/grl-tmdb.xml
 %{_libdir}/grilo-%{api}/libgrltmdb.so
 
-%{_libdir}/grilo-%{api}/grl-freebox.xml
+#{_libdir}/grilo-%{api}/grl-freebox.xml
 %{_libdir}/grilo-%{api}/libgrlfreebox.so
 
-%{_libdir}/grilo-%{api}/grl-thetvdb.xml
-%{_libdir}/grilo-%{api}/libgrlthetvdb.so
+#{_libdir}/grilo-%{api}/grl-thetvdb.xml
+#{_libdir}/grilo-%{api}/libgrlthetvdb.so
 
-%{_libdir}/grilo-0.2/grl-daap.xml
-%{_libdir}/grilo-0.2/grl-dpap.xml
-%{_libdir}/grilo-0.2/libgrldaap.so
-%{_libdir}/grilo-0.2/libgrldpap.so
+#{_libdir}/grilo-0.2/grl-daap.xml
+#{_libdir}/grilo-0.2/grl-dpap.xml
+#{_libdir}/grilo-0.2/libgrldaap.so
+#{_libdir}/grilo-0.2/libgrldpap.so
 
-%{_libdir}/grilo-%{api}/grl-lua-factory.xml
-%{_libdir}/grilo-%{api}/libgrlluafactory.so
+#{_libdir}/grilo-%{api}/grl-lua-factory.xml
+#{_libdir}/grilo-%{api}/libgrlluafactory.so
 
-%{_datadir}/%{name}/grl-lua-factory/grl-euronews.lua
-%{_datadir}/%{name}/grl-lua-factory/grl-guardianvideos.lua
-%{_datadir}/%{name}/grl-lua-factory/grl-metrolyrics.lua
-%{_datadir}/%{name}/grl-lua-factory/grl-musicbrainz.lua
-%{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.lua
-%{_datadir}/%{name}/grl-lua-factory/grl-appletrailers.gresource
-%{_datadir}/%{name}/grl-lua-factory/grl-appletrailers.lua
-%{_datadir}/%{name}/grl-lua-factory/grl-euronews.gresource
-%{_datadir}/%{name}/grl-lua-factory/grl-guardianvideos.gresource
-%{_datadir}/%{name}/grl-lua-factory/grl-pocket.gresource
-%{_datadir}/%{name}/grl-lua-factory/grl-pocket.lua
-%{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.gresource
-%{_datadir}/%{name}/grl-lua-factory/grl-video-title-parsing.lua
+#{_datadir}/%{name}/grl-lua-factory/grl-euronews.lua
+#{_datadir}/%{name}/grl-lua-factory/grl-guardianvideos.lua
+#{_datadir}/%{name}/grl-lua-factory/grl-metrolyrics.lua
+#{_datadir}/%{name}/grl-lua-factory/grl-musicbrainz.lua
+#{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.lua
+#{_datadir}/%{name}/grl-lua-factory/grl-appletrailers.gresource
+#{_datadir}/%{name}/grl-lua-factory/grl-appletrailers.lua
+#{_datadir}/%{name}/grl-lua-factory/grl-euronews.gresource
+#{_datadir}/%{name}/grl-lua-factory/grl-guardianvideos.gresource
+#{_datadir}/%{name}/grl-lua-factory/grl-pocket.gresource
+#{_datadir}/%{name}/grl-lua-factory/grl-pocket.lua
+#{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.gresource
+#{_datadir}/%{name}/grl-lua-factory/grl-video-title-parsing.lua
 %{_datadir}/help/C/%{name}
