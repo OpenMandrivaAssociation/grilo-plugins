@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   grilo-plugins-0.2.16.tar.xz: f61e62f9c2f071ac5352b0ec465d96fb119820cd
+sources:
+  grilo-plugins-0.2.17.tar.xz: 35f147f43e25c2099cc37af6773ac64ac9f20f85
