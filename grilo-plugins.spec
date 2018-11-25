@@ -72,7 +72,6 @@ This package contains plugins to get information from theses sources:
 	--enable-flickr	\
 	--enable-gravatar \
 	--enable-jamendo \
-	--enable-lastfm-albumart \
 	--enable-localmetadata \
 	--enable-metadata-store \
 	--enable-podcasts \
@@ -114,9 +113,6 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 
 %{_libdir}/grilo-%{api}/grl-jamendo.xml
 %{_libdir}/grilo-%{api}/libgrljamendo.so
-
-%{_libdir}/grilo-%{api}/grl-lastfm-albumart.xml
-%{_libdir}/grilo-%{api}/libgrllastfm-albumart.so
 
 %{_libdir}/grilo-%{api}/grl-local-metadata.xml
 %{_libdir}/grilo-%{api}/libgrllocalmetadata.so
@@ -181,4 +177,7 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 %{_datadir}/%{name}/grl-lua-factory/grl-pocket.lua
 %{_datadir}/%{name}/grl-lua-factory/grl-radiofrance.gresource
 %{_datadir}/%{name}/grl-lua-factory/grl-video-title-parsing.lua
+%{_datadir}/%{name}/grl-lua-factory/grl-lastfm-cover.lua
+%{_datadir}/%{name}/grl-lua-factory/grl-spotify-cover.lua
+
 %{_datadir}/help/C/%{name}
