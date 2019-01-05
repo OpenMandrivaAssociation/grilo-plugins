@@ -65,28 +65,12 @@ This package contains plugins to get information from theses sources:
 %apply_patches
 
 %build
-%configure \
-	--disable-static \
-	--disable-shoutcast \
-	--disable-bookmarks \
-	--enable-filesystem \
-	--enable-flickr	\
-	--enable-gravatar \
-	--enable-jamendo \
-	--enable-lastfm-albumart \
-	--enable-localmetadata \
-	--enable-metadata-store \
-	--enable-podcasts \
-	--enable-shoutcast \
-	--enable-tracker \
-	--enable-vimeo \
-	--enable-youtube \
-	--enable-compile-warnings=no
-
-%make
+%meson \
+		-Denable-freebox=yes
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name}
 
