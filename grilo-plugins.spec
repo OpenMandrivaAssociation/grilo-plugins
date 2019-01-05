@@ -65,8 +65,6 @@ This package contains plugins to get information from theses sources:
 %apply_patches
 
 %build
-%meson \
-	-Denable-freebox=yes
 %meson_build
 
 %install
