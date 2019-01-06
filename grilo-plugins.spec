@@ -17,6 +17,7 @@ BuildRequires:	gnome-common
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
+BuildRequires:  meson
 BuildRequires:	pkgconfig(avahi-gobject)
 BuildRequires:	pkgconfig(avahi-glib)
 BuildRequires:	pkgconfig(avahi-client)
@@ -65,6 +66,8 @@ This package contains plugins to get information from theses sources:
 %apply_patches
 
 %build
+%meson \
+	-Denable-freebox=yes
 %meson_build
 
 %install
