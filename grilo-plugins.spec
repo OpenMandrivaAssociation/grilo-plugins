@@ -77,7 +77,7 @@ This package contains plugins to get information from theses sources:
 
 # Remove files that will not be packaged
 find %{buildroot} -name "*.la" -delete
-rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
+rm %{buildroot}%{_datadir}/help/*/examples/example-tmdb.c
 
 %find_lang %{name} --with-gnome
 
@@ -85,3 +85,4 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 %doc AUTHORS NEWS README
 %{_libdir}/grilo-%{api}/libgrl*.so
 #{_datadir}/grilo-plugins/
+%{_libdir}/pkgconfig/grilo-plugins-%{api}.pc
