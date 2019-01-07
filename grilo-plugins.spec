@@ -6,8 +6,8 @@
 
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
-Version:	0.3.7
-Release:	2
+Version:	0.3.8
+Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
@@ -17,6 +17,7 @@ BuildRequires:	gnome-common
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
+BuildRequires:  meson
 BuildRequires:	pkgconfig(avahi-gobject)
 BuildRequires:	pkgconfig(avahi-glib)
 BuildRequires:	pkgconfig(avahi-client)
@@ -65,34 +66,18 @@ This package contains plugins to get information from theses sources:
 %apply_patches
 
 %build
-%configure \
-	--disable-static \
-	--disable-shoutcast \
-	--disable-bookmarks \
-	--enable-filesystem \
-	--enable-flickr	\
-	--enable-gravatar \
-	--enable-jamendo \
-	--enable-lastfm-albumart \
-	--enable-localmetadata \
-	--enable-metadata-store \
-	--enable-podcasts \
-	--enable-shoutcast \
-	--enable-tracker \
-	--enable-vimeo \
-	--enable-youtube \
-	--enable-compile-warnings=no
-
-%make
+%meson \
+	-Denable-freebox=yes
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 %find_lang %{name}
 
 # Remove files that will not be packaged
 find %{buildroot} -name "*.la" -delete
-rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
+rm %{buildroot}%{_datadir}/help/*/examples/example-tmdb.c
 
 %find_lang %{name} --with-gnome
 
@@ -100,3 +85,4 @@ rm %{buildroot}%{_datadir}/help/C/examples/example-tmdb.c
 %doc AUTHORS NEWS README
 %{_libdir}/grilo-%{api}/libgrl*.so
 #{_datadir}/grilo-plugins/
+%{_libdir}/pkgconfig/grilo-plugins-%{api}.pc
