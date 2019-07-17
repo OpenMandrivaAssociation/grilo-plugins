@@ -86,4 +86,5 @@ rm %{buildroot}%{_datadir}/help/*/examples/example-tmdb.c
 %doc AUTHORS NEWS README
 %{_libdir}/grilo-%{api}/libgrl*.so
 #{_datadir}/grilo-plugins/
+%{_datadir}/grilo-plugins/grl-lua-factory/grl*
 %{_libdir}/pkgconfig/grilo-plugins-%{api}.pc
