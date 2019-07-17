@@ -14,6 +14,7 @@ Url:		https://live.gnome.org/Grilo
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	gnome-common
+BuildRequires:	gperf
 BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	libxml2-utils
