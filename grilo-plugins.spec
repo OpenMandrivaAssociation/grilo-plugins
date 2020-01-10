@@ -64,7 +64,7 @@ This package contains plugins to get information from theses sources:
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %meson \
