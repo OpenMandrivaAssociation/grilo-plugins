@@ -83,7 +83,7 @@ rm %{buildroot}%{_datadir}/help/*/examples/example-tmdb.c
 %find_lang %{name} --with-gnome
 
 %files -f %{name}.lang
-%doc AUTHORS NEWS README
+%doc AUTHORS NEWS README.md
 %{_libdir}/grilo-%{api}/libgrl*.so
 #{_datadir}/grilo-plugins/
 %{_datadir}/grilo-plugins/grl-lua-factory/grl*
