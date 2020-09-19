@@ -68,7 +68,8 @@ This package contains plugins to get information from theses sources:
 
 %build
 %meson \
-	-Denable-freebox=yes
+	-Denable-freebox=yes \
+	-Denable-tracker3=yes
 %meson_build
 
 %install
