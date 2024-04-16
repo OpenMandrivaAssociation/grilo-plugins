@@ -7,7 +7,7 @@
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
 Version:	0.3.16
-Release:	3
+Release:	4
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
@@ -24,17 +24,15 @@ BuildRequires:	pkgconfig(avahi-glib)
 BuildRequires:	pkgconfig(avahi-client)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gmime-3.0)
+BuildRequires:	pkgconfig(goa-1.0)
 BuildRequires:	pkgconfig(gom-1.0)
-BuildRequires:	pkgconfig(gupnp-1.6)
-BuildRequires:	pkgconfig(gupnp-av-1.0)
-BuildRequires:	pkgconfig(libdmapsharing-3.0)
-BuildRequires:	pkgconfig(libgdata)
+BuildRequires:	pkgconfig(libdmapsharing-4.0)
 BuildRequires:	pkgconfig(libgcrypt)
-BuildRequires:	pkgconfig(libsoup-2.4)
+BuildRequires:	pkgconfig(libsoup-3.0)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(libmediaart-2.0)
 BuildRequires:	pkgconfig(lua)
-BuildRequires:	pkgconfig(rest-0.7)
+BuildRequires:	pkgconfig(oauth)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(tracker-sparql-3.0)
 BuildRequires:	pkgconfig(grilo-0.3)
