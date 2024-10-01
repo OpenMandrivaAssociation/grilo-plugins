@@ -7,7 +7,7 @@
 Summary:	Plugins for the Grilo framework
 Name:		grilo-plugins
 Version:	0.3.16
-Release:	5
+Release:	6
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/Grilo
@@ -34,12 +34,12 @@ BuildRequires:	pkgconfig(libmediaart-2.0)
 BuildRequires:	pkgconfig(lua)
 BuildRequires:	pkgconfig(oauth)
 BuildRequires:	pkgconfig(sqlite3)
-BuildRequires:	pkgconfig(tracker-sparql-3.0)
+BuildRequires:	pkgconfig(tinysparql-3.0)
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(totem-plparser)
 BuildRequires:	pkgconfig(gom-1.0)
-BuildRequires:	tracker-vala
-BuildRequires:	tracker
+BuildRequires:	tinysparql-vala
+BuildRequires:	tinysparql
 Requires:	grilo >= 0.2.6
 
 %description
