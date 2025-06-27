@@ -39,6 +39,7 @@ BuildRequires:	pkgconfig(tinysparql-3.0)
 BuildRequires:	pkgconfig(grilo-0.3)
 BuildRequires:	pkgconfig(totem-plparser)
 BuildRequires:	pkgconfig(gom-1.0)
+BuildRequires:	localsearch
 BuildRequires:	tinysparql-vala
 BuildRequires:	tinysparql
 Requires:	grilo >= 0.2.6
